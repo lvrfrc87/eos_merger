@@ -18,5 +18,5 @@ setup(
         'Operating System :: MacOS',
     ],
     url="https://git.tmaws.io/federico.olivieri/tm_merger",
-    install_requires=reqs,
+    install_requires='more_itertools',
 )
