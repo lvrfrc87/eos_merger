@@ -48,47 +48,10 @@ EXAMPLES = """
 """
 
 RETURN = """
-compare:
-  description: before vs. after diff
+candidate:
+  description: file candidate config
   returned: always
-  type: dict
-  sample: {
-    "delete": {
-        "ns2.sys.cloudsys.tmcs": {
-            "delay": 0.717,
-            "jitter": 0.117,
-            "lastReceived": 1583061550.0,
-            "peerType": "unicast",
-            "reachabilityHistory": [
-                true,
-                true
-            ],
-            "condition": "reject",
-            "offset": 0.047,
-            "peerIpAddr": "10.75.33.5",
-            "pollInterval": 64,
-            "refid": "169.254.0.1",
-            "stratumLevel": 3
-        }
-    },
-    "insert": {
-        "time2.google.com": {
-            "delay": 10.209,
-            "jitter": 0.0,
-            "lastReceived": 1583061584.0,
-            "peerType": "unicast",
-            "reachabilityHistory": [
-                true
-            ],
-            "condition": "reject",
-            "offset": -23.386,
-            "peerIpAddr": "216.239.35.4",
-            "pollInterval": 64,
-            "refid": ".GOOG.",
-            "stratumLevel": 1
-        }
-    }
-}
+  type: list
 """
 import os
 import re
