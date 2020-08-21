@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="tm_merger",
+    name="eos_merger",
     version='0.0.1',
     packages=find_packages(exclude=("test*", "venv")),
     author="Federico Olivieri",
@@ -17,6 +17,6 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS',
     ],
-    url="https://git.tmaws.io/federico.olivieri/tm_merger",
+    url="https://github.com/lvrfrc87/eos_merger",
     install_requires='more_itertools',
 )

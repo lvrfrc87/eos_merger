@@ -9,7 +9,7 @@ from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
 DOCUMENTATION = """
-module: tm_merger
+module: eos_merger
 version_added: "2.10"
 author: "Federico Olivieri (@Federico87)"
 short_description: Arista EOS config merger.
@@ -41,7 +41,7 @@ requirements:
 EXAMPLES = """
 ---
 - name: merge base.j2 with tenant.j2.
-  tm_merger:
+  eos_merger:
     base: ./configurations/{{ inventory_hostname }}/renders/{{ config_file_name }}.cfg
     tenant: ./configurations/{{ inventory_hostname }}/renders/tenants/{{ config_file_name }}.cfgfg
     file: ./configurations/{{ inventory_hostname }}/renders/candidate/{{ config_file_name }}.cfg
