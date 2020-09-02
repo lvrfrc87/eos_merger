@@ -2,8 +2,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="eos_merger",
-    version='0.0.1',
+    name="tm_merger",
+    version='0.0.3',
     packages=find_packages(exclude=("test*", "venv")),
     author="Federico Olivieri",
     author_email="federico.olivieri@ticketmaster.nl",
@@ -17,6 +17,6 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS',
     ],
-    url="https://github.com/lvrfrc87/eos_merger",
+    url="https://github.com/lvrfrc87/tm_merger",
     install_requires='more_itertools',
 )
